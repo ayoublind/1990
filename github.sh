@@ -15,7 +15,7 @@ echo "**$YEAR** script" > README.md
 git add .
 GIT_AUTHOR_DATE="$YEAR-01-01T18:00:00" GIT_COMMITTER_DATE="$YEAR-01-01T18:00:00" git commit -m "$YEAR"
 git remote add origin https://github.com/$USERNAME/$YEAR.git
-git push -u origin main -f
+git push --set-upstream origin master
 cd ..
 rm -rf $YEAR
 
